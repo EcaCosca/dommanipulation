@@ -27,3 +27,11 @@ function addElement () {
 const alerter = () => alert("BOOM!")
 
 document.getElementById("main-header").addEventListener('click', alerter)
+
+const button = document.querySelector('.redirect');
+
+console.log(button)
+
+button.addEventListener('click', () => {
+    document.location.href = 'http://www.google.com';
+})
